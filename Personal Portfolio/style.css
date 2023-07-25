@@ -1,0 +1,742 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+/*html{
+    scroll-behavior: smooth;
+}*/
+
+body{
+    background-color: black
+}
+
+/*Intro page*/
+
+#portfolio{
+    display: flex;
+    position: relative;
+}
+
+#portfolio .sidenav{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    padding: 30px 0;
+    background-color: rgb(184, 177, 177);
+}
+
+#portfolio .sidenav img{
+    display: flex;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3px 0;
+}
+
+#portfolio .sidenav ul li{
+    padding: 8px;
+    margin-top: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+#portfolio .sidenav ul li a{
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: block;
+    padding-left: 60px;
+    margin-top: 10px;
+}
+
+#potfolio .sidenav ul li a .fas{
+    width: 15px;
+}
+
+#portfolio .sidenav ul li a:hover{
+    background: grey;
+    height: 20px;
+}
+
+#portfolio i{
+    padding: 2.5px;
+}
+
+#main_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    margin-left: 250px;
+}
+
+#main_content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+}
+
+#main_content h1{
+    text-align: center;
+    color: white;
+    padding-top: 230px;
+}
+
+#main_content h3{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#main_content .btn{
+    font-weight: bold;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid white;
+    background-color: rgb(137, 132, 133);
+    border-radius: 18px;
+    cursor: pointer;
+    padding: 6px 20px;
+    width: 190px;
+    text-align: center;
+    text-decoration: black;
+}
+
+#navbar{
+    display: flex;
+    top: 0;
+    position: sticky;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(184, 177, 177);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar img{
+    display: flex;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+#navbar ul{
+    display: flex;
+    padding-left: 420px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#navbar ul li a{
+    display: flex;
+    padding-left: 24px;
+    padding-top: 18px;
+    text-decoration: none;
+    color: black;
+    margin: 8px;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+/*Home*/
+
+#home{
+    background: black;   
+    
+    height: 100%;
+}
+
+#home button{
+    display: flex;
+    color: white;
+    padding: 9px;
+    background: black;
+    border: 2px solid white;
+    margin: 9px;
+}
+
+#home button:hover{
+    cursor: pointer;
+}
+
+#home button a{
+    color: white;
+}
+
+#home img{
+    display: flex;
+    margin: auto;
+    height: 964px;
+    width: 330px;
+    padding: 70px;
+    justify-content: center;
+}
+
+#home .text h2{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#home .text h3{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#navbar button{
+    display: flex;
+    margin: auto;
+    color: black;
+    background-color: rgb(184, 177, 177);
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-size: 1.2rem;
+    padding-left: 900px;
+    cursor: pointer;
+}
+
+#navbar button:hover a{
+    color: rgb(86, 9, 9);
+}
+
+#navbar button a{
+    color: black;
+}
+
+#navbar i{
+    padding: 2px;
+}
+
+/*About*/
+
+#about button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+    
+}
+
+#about button:hover{
+    cursor: pointer;
+}
+
+#about button a{
+    color: white;
+}
+
+#heading p{
+    display: flex;
+    margin: auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#info p{
+    color: white;
+    padding: 70px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+#resumebtn button{
+    display: flex;
+    margin: auto;
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#resumebtn button:hover a{
+    color: rgb(123, 119, 122);
+}
+
+#resumebtn button a{
+    color: white;
+}
+
+#resumebtn i{
+    padding: 2px;
+}
+
+#about footer{
+        display: flex;
+        background: black;
+        color: white;
+        padding: 9px 15px;
+        margin-top: auto;
+        justify-content: center;
+        padding-top: 740px;
+}
+
+/*Education*/
+
+#education button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#education button:hover{
+    cursor: pointer;
+}
+
+#education button a{
+    color: white;
+}
+
+#education footer{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    margin-top: auto;
+    justify-content: center;
+    padding-top: 740px;
+}
+
+#info_ed{
+    margin: 90px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+#info_ed .box{
+    border: 2px solid white;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(184, 177, 177);
+}
+
+#info_ed .box img{
+    height: 160px;
+    display: block; 
+    margin: auto;
+    padding: 5px;
+} 
+
+#info_ed p{
+    font-family: 'Domine', serif;
+    color: black;
+}
+
+#info_ed .h-secondary{
+    padding: 9px;
+    margin-top: 6px;
+}
+
+/*Skills*/
+
+#skills button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#skills button:hover{
+    cursor: pointer;
+}
+
+#skills button a{
+    color: white;
+}
+
+#tech{
+    color: rgb(184, 177, 177);
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+#hard{
+    padding-left: 260px;
+    padding-bottom: 120px;
+}
+
+#hard img{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: auto;
+    align-items: center;
+    padding: 25px;
+    height: 130px;
+    width: 130px;
+}
+
+#basic{
+    color: rgb(184, 177, 177);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+#comp{
+    padding-left: 440px;
+    padding-bottom: 100px;
+}
+
+#comp img{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: auto;
+    align-items: center;
+    padding: 25px;
+    height: 130px;
+    width: 130px;
+}
+
+#softsk{
+    color: rgb(184, 177, 177);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+#soft{
+    padding-left: 220px;
+    padding-bottom: 100px;
+}
+
+#soft img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+}
+
+#soft ul li{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    color: white;
+    padding: 15px;
+    margin: auto;
+    justify-content: center;
+    padding-right: 220px;
+    font-size: 1.3rem;
+}
+
+#soft i{
+    padding-right: 8px;
+}
+
+/*Certifications*/
+
+#certifications button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#certifications button:hover{
+    cursor: pointer;
+}
+
+#certifications button a{
+    color: white;
+}
+
+#certifications footer{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    margin-top: auto;
+    justify-content: center;
+    padding-top: 740px;
+}
+
+#info_certification{
+    margin: 90px;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+#info_certification .box{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    padding: 34px;
+    padding-bottom: 40px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(184, 177, 177);
+}
+
+#info_certification .box img{
+    height: 140px;
+    padding: 5px;
+} 
+
+#exp{
+    display: block;
+    font-family: 'Domine', serif;
+    color: black;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+#info_certification a{
+    color: purple;
+    text-decoration: underline;
+}
+
+#info_certification a:hover{
+    color: black;
+}
+
+/*Projects*/
+
+#projects button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#projects button:hover{
+    cursor: pointer;
+}
+
+#projects button a{
+    color: white;
+}
+
+#projects footer{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    margin-top: auto;
+    justify-content: center;
+    padding-top: 740px;
+}
+
+#info_pro{
+    margin: 90px;
+    display: flex;
+    padding-top: 30px;
+}
+
+#info_pro .box{
+    border: 3px solid white;
+    padding: 15px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(184, 177, 177);
+}
+
+#info_pro .box img{
+    height: 160px;
+    display: block; 
+    margin: auto;
+    padding: 5px;
+} 
+
+#info_pro p{
+    font-family: 'Domine', serif;
+    color: black;
+    padding: 9px;
+    text-align: center;
+}
+
+#info_pro .h-secondary{
+    padding: 19px;
+    margin-top: 6px;
+}
+
+#info_pro a{
+    color: purple;
+    text-decoration: underline;
+}
+
+#info_pro a:hover{
+    color: black;
+}
+
+/*Contact*/
+
+#backbtn button{
+    display: flex;
+    color: white;
+    padding: 10px;
+    background: black;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+#backbtn button:hover{
+    cursor: pointer;
+}
+
+#backbtn button a{
+    color: white;
+}
+
+#info_contact{
+    padding-top: 55px;
+}
+
+#contact_form{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#info_contact form{
+    width: 100%;
+}
+
+#contact_form label{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Domine', serif;
+}
+
+#contact_form input{
+    width: 45%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 9px;
+}
+
+#contact_form textarea{
+    width: 45%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 9px;
+    
+}
+
+#con{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+#con_info{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.3rem;
+}
+
+#con_info p{
+    padding: 8px;
+}
+
+#con_info i{
+    padding: 8px;
+}
+
+#social_info{
+    padding-left: 580px;
+}
+
+#social_info button{
+    display: flex;
+    margin: auto;
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+    background: black;
+    font-size: 2rem;
+    border: none;
+}
+
+#social_info button a{
+    color: white;
+    background: none;
+    padding: 10px;
+}
+
+#social_info button a:hover{
+    cursor: pointer;
+}
+
+#footer{
+    display: flex;
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    margin-top: auto;
+    justify-content: center;
+    padding-top: 740px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 15px;
+    bottom: 0;
+    margin-top: 150px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,97 @@
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#info_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-top: 54px;
+}
+
+#info_contact input,
+#info_contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#info_contact form{
+    width: 48%;
+}
+
+#info_contact label{
+    font-size: 1.3rem;
+    font-family: 'Domine', serif;
+    color: white;
+    padding-bottom: 15px;
+}
+
+#con p{
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+#cont p{
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#cont p a{
+    color: white;
+}
+
+<form action="">
+
+    <div class="form-group"> 
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+    </div>
+
+    <div class="form-group"> 
+        <label for="phone">Phone : </label>
+        <input type="phone" name="name" id="phone" placeholder="Enter Your Phone Number">
+    </div>
+
+    <div class="form-group"> 
+        <label for="email">Email : </label>
+        <input type="email" name="name" id="email" placeholder="Enter Your Email">
+    </div>
+
+    <div class="form-group"> 
+        <label for="message">Message : </label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+
+</form>  
+
+
+<div id="con">
+    <p> Get In Touch </p>
+</div>
+
+<div id="cont">
+    <p> <i class="fa-solid fa-phone"></i> Phone : +91 9009372585 </p>
+    <p> <i class="fa-solid fa-envelope"></i> Mail : nausheen.k148@gmail.com </p>
+</div>
+
+<div id="con">
+    <p> Social Media </p>
+</div>
+
+<div id="">
+    <button><a href="https://www.linkedin.com/in/nausheen-khan-935696249/"><i class="fa-brands fa-linkedin"></i></a></button>
+</div>
